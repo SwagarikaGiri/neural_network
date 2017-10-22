@@ -1,0 +1,11 @@
+input = [0 0; 0 1; 1 0; 1 1];
+and=[0;0;0;1];
+or=[0;1;1;1];
+nor=[1;0;0;0];
+nand=[1;1;1;0];
+xor=[0;1;1;0];
+[weightsand ,outand, errorand ]=compute(input,and);
+[weightsor ,outor, erroror ]=compute(input,or);
+[weightsnor ,outnor, errornor ]=compute(input,nor);
+[weightsnand ,outnand, errornand ]=compute(input,nand);
+[weightsxor ,outxor, errorxor ]=compute(input,xor);
